@@ -13,7 +13,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 4000;
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://node-firestore-blog-6ea50.firebaseio.com",
+  databaseURL: process.env.DATABASE_URL,
 });
 
 const firestore = admin.firestore();
