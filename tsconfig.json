@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "./src",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "paths": {
+            "@models/*": [
+                "models/*"
+            ],
+            "@queries/*": [
+                "queries/*"
+            ],
+            "@mutations/*": [
+                "mutations/*"
+            ],
+            "@middlewares/*": [
+                "middlewares/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "@models": "./src/models",
+                    "@queries": "./src/queries",
+                    "@mutations": "./src/mutations",
+                    "@middlewares": "./src/middlewares",
+                    "@utils": "./src/utils"
+                }
+            }
+        ],
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "regenerator": true
+            }
+        ]
+    ]
+}

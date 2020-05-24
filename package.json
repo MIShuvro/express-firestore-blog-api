@@ -1,0 +1,37 @@
+{
+  "name": "node-firestore-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd ts-node-dev --no-notify -r tsconfig-paths/register src/app.ts -e ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "class-validator": "^0.12.2",
+    "cowsay": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.12.1",
+    "fireorm": "^0.13.4",
+    "reflect-metadata": "^0.1.13",
+    "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "env-cmd": "^10.1.0",
+    "nexus": "^0.20.0",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.10.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  }
+}

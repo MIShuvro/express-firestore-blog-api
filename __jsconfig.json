@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": ["src/utils/*"],
+      "@models/*": ["src/models/*"],
+      "@queries/*": ["src/queries/*"],
+      "@mutations/*": ["src/mutations/*"],
+      "@middlewares/*": ["src/middlewares/*"]
+    }
+  },
+  "exclude": ["./build"]
+}
