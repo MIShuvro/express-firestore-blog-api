@@ -1,7 +1,7 @@
 const formatError = (errors: any) => {
   let errobj = {};
     errors.forEach((key: any) => {
-      console.log(key)
+     // console.log(key)
       errobj[key.property] = key.constraints 
   });
    return errobj

@@ -7,12 +7,19 @@ import {
   ValidationArguments,
 } from "class-validator";
 
+import { UserModel, User } from "../models/User";
+
 @ValidatorConstraint({ async: true })
 export class UniqueConstraint implements ValidatorConstraintInterface {
   async validate(value: any, args: ValidationArguments) {
-    // get records that equal the `email` value from DB.
-    // If exist the `email` value in target table, return false. (unique validation error)
-    return true;
+    let isUserName = await UserModel.whereEqualTo("username", value).findOne();
+    let isEmail = await UserModel.whereEqualTo("email", value).findOne();
+    if (isUserName || isEmail) {
+      return false;
+    } else {
+      return true;
+    }
+    
   }
 }
 
